@@ -31,73 +31,7 @@ Follow these instructions to get the project up and running on your local machin
     mkdir static
     ```
 
-3.  **Create HTML Files:** Inside the `static` directory, create the following three HTML files.
-
-    *   `static/index.html`:
-        ```html
-        <!DOCTYPE html>
-        <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Go Web Server</title>
-        </head>
-        <body>
-            <h1>Welcome to the Go Web Server!</h1>
-            <p>Choose a form to submit:</p>
-            <ul>
-                <li><a href="/form.html">General Form</a></li>
-                <li><a href="/wellbeing.html">Wellbeing Survey</a></li>
-            </ul>
-        </body>
-        </html>
-        ```
-
-    *   `static/form.html`:
-        ```html
-        <!DOCTYPE html>
-        <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Contact Form</title>
-        </head>
-        <body>
-            <h2>Contact Form</h2>
-            <form action="/form" method="post">
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name"><br><br>
-                <label for="address">Address:</label><br>
-                <input type="text" id="address" name="address"><br><br>
-                <input type="submit" value="Submit">
-            </form>
-        </body>
-        </html>
-        ```
-
-    *   `static/wellbeing.html`:
-        ```html
-        <!DOCTYPE html>
-        <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Wellbeing Survey</title>
-        </head>
-        <body>
-            <h2>Wellbeing Survey</h2>
-            <form action="/wellbeing" method="post">
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name"><br><br>
-                <label for="age">Age:</label><br>
-                <input type="number" id="age" name="age"><br><br>
-                <label for="health-condition">Health Condition:</label><br>
-                <input type="text" id="health-condition" name="health-condition"><br><br>
-                <input type="submit" value="Submit">
-            </form>
-        </body>
-        </html>
-        ```
+3.  **Create HTML Files:** Inside the `static` directory, paste the above three HTML files in the `static` directory which you created.
 
 4.  **Run the Server:** Open your terminal, navigate to the project directory, and run the following command:
     ```sh
